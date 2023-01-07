@@ -1,0 +1,82 @@
+@import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';
+body {
+background: url("../clouds-g7ffe775d9_1280.jpg")center/cover;
+font-size: .6rem;
+font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+form {
+    background-color: rgb(0,0,0,0.2);
+    padding: 1rem;
+    border-radius: 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 6px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+.icon {
+    font-size: 2rem;
+  }
+
+.section {
+    padding:0;
+    background-color: rgb(0,0,0,0.2);
+    border-radius: 20px;
+    width: 100%;
+    display:flex;
+    color: white;
+}
+
+.article {
+padding:2rem;
+width:100%;
+border-radius: 20px;
+display:flex;
+flex-direction: column;
+justify-content: center;
+gap: 1rem;
+}
+ h2{
+    text-align:center;
+    font-size: 1rem;
+    font-weight: 300;
+    
+ }
+h3{
+    width: 100%;
+    text-align: center;
+    font-size: .9rem;
+}
+.icons {
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+  }
+.cajaicono {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bigtext {
+    font-size: 1.6rem;
+    font-weight: 800;
+}
