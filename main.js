@@ -4,7 +4,7 @@ const form = document.querySelector("#form");
 const section = document.querySelector(".section");
 const KEY = '261c103b267bb4657dc83a691b2eabda';
 const LANG = "es"
-var ciudad = String(form.ciudad.value);
+var ciudad = "LEGANES"
 
 
 
@@ -26,7 +26,7 @@ function extractorDeDatos (datos) {
     const articulo = document.createElement("article");
     articulo.className="article";
     articulo.innerHTML = `
-    <h2>Asi está el tiempo en ${ciudad}</h2>
+    <h2>EL TIEMPO EN ${ciudad}</h2>
     <h3>${descripcion}</h3>
     <div class="icons">
       <div class="cajaicono">

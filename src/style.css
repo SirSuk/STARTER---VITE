@@ -1,6 +1,6 @@
 @import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';
 body {
-background: url("../clouds-g7ffe775d9_1280.jpg")center/cover;
+background: url("../src/pexels-jimmy-chan-1117403.jpg")center/cover;
 font-size: .6rem;
 font-family: 'Raleway', sans-serif;
 }
@@ -57,8 +57,8 @@ gap: 1rem;
 }
  h2{
     text-align:center;
-    font-size: 1rem;
-    font-weight: 300;
+    font-size: 1.8rem;
+    font-weight: 600;
     
  }
 h3{
