@@ -19,7 +19,7 @@ font-family: 'Raleway', sans-serif;
 
 form {
     background-color: rgb(0,0,0,0.2);
-    padding: 1rem;
+    padding: 2rem 6rem;
     border-radius: 20px;
     display:flex;
     flex-direction: column;

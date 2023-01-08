@@ -1,21 +1,21 @@
 import { capitalize } from "./src/helpers/capitalize";
 
-
-
-
 const form = document.querySelector("#form");
 const section = document.querySelector(".section");
 const KEY = '261c103b267bb4657dc83a691b2eabda';
 const LANG = "es"
+var ciudad = String(form.ciudad.value);
 
 
 
-function dataSetting () {
+function dataSetting (e) {
+  e.preventDefault();
+  llamadaApi()
 
-    return 
 }
 
 function extractorDeDatos (datos) {
+  console.log(datos)
     const velocidadViento = datos.wind.speed;
     const descripcion = capitalize(datos.weather[0].description)
     const humedad = datos.main.humidity
@@ -26,7 +26,7 @@ function extractorDeDatos (datos) {
     const articulo = document.createElement("article");
     articulo.className="article";
     articulo.innerHTML = `
-    <h2>Asi está el tiempo en Madrid</h2>
+    <h2>Asi está el tiempo en ${ciudad}</h2>
     <h3>${descripcion}</h3>
     <div class="icons">
       <div class="cajaicono">
@@ -59,4 +59,4 @@ const llamadaApi= () => { fetch(`https://api.openweathermap.org/data/2.5/weather
 }
 
 
-form.addEventListener('submit', () => dataSetting)
+form.addEventListener('submit', (e) => dataSetting(e))
