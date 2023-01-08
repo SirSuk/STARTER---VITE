@@ -27,10 +27,10 @@ border-radius: 20px;
 padding: 1.2rem .5rem;
 font-size: .8rem;
 display:flex;
-flex-direction: column;
-justify-content: center;
+justify-content: flex-start;
 align-items: center;
 background: khaki;
+margin-bottom: 1rem; 
 }
 .chiste img{
   margin-bottom: .5rem;

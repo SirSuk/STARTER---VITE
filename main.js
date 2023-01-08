@@ -7,6 +7,7 @@ console.log("proyect started")
 
 function pintaDatos(datos){
   console.log(datos.joke)
+  section.innerHTML = "";
   const newJoke =document.createElement('article');
   console.log(newJoke)
   newJoke.className = 'chiste';
@@ -15,7 +16,6 @@ function pintaDatos(datos){
   <img src="./src/jokeface.jpg" alt="">
   <p>${datos.joke}</p>
   `
-
   section.appendChild(newJoke);
 }
 
